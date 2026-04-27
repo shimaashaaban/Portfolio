@@ -55,6 +55,25 @@ gap-4 sm:gap-6 mb-6 sm:mb-7 w-full">
               </a>
             ))}
           </div>
+          <h1
+            className={`title-font text-3x1 sm:text-4x1
+                        lg:text-5x1 mb-4 font-bold ${theme.textPrimary}`}
+            data-aos="fade-up"
+            data-aos-delay="500">
+            Hi, I'm Shimaa
+          </h1>
+          <p
+            className={`mb-6 sm:mb-8 leading-relaxed max-w-md
+            sm:max-w-lg ${theme.textSecondary}`}>
+            “I’m a Full-Stack Developer with a strong focus on building scalable
+            web applications using ASP.NET Core, Angular, and React. I
+            specialize in creating clean, maintainable architectures and
+            transforming complex ideas into efficient, user-friendly solutions.
+            I have hands-on experience developing APIs, designing modern
+            dashboards, and integrating frontend and backend systems seamlessly.
+            I’m passionate about writing high-quality code, solving real-world
+            problems, and continuously improving my skills.”
+          </p>
         </div>
       </section>
     </div>
