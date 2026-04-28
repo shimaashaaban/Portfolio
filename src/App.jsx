@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
   useEffect(() => {
@@ -12,6 +14,9 @@ const App = () => {
       offset: 100,
     });
     document.documentElement.classList.add("dark");
+  }, []);
+  useEffect(() => {
+    AOS.refresh();
   }, []);
   const toggleDarkMode = () => {
     const newMode = !darkMode;
@@ -27,6 +32,8 @@ const App = () => {
       }>
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero darkMode={darkMode} />
+      <About darkMode={darkMode} />
+      <Skills darkMode={darkMode} />
     </div>
   );
 };
