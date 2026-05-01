@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../assets/About.png";
+import about from "../assets/about.png";
 
 const STATS = [
   { value: "4+", label: "Education" },
