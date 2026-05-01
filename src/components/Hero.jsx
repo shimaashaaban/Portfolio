@@ -32,7 +32,7 @@ const Hero = ({ darkMode }) => {
   const theme = darkMode ? darkTheme : lightTheme;
 
   return (
-    <div className="relative overflow-hidden min-h-screen flex flex-col">
+    <div className="relative overflow-hidden min-h-screen flex flex-col" id="">
       <section
         id="home"
         data-aos="fade-up"
@@ -105,7 +105,9 @@ const Hero = ({ darkMode }) => {
                   </button>
                 </a>
 
-                <a href="#contact" className="w-full sm:w-auto">
+                <a
+                  href="mailto:shimaashaaban238@gmail.com"
+                  className="w-full sm:w-auto">
                   <button
                     className={`w-full sm:w-auto inline-flex items-center justify-center
                       ${theme.buttonSecondary}
